@@ -1,7 +1,10 @@
 *{
   margin:0;
   padding:0;
-  
+  -webkit-transform: translate3d(0, 0, 0);
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0); 
 }
 
 #quoteText {
@@ -122,8 +125,8 @@ position: absolute;
 width: inherit;
 font-size:18px;
 border-bottom: 1px solid rgb(187, 187, 187);
-padding: 3px 3px 3px 3px;
-line-height: 35px;
+padding-right: 3px;
+line-height: 41px;
 position: relative;
 top: 0px;
 color: rgba(34, 34, 34,1);
@@ -140,36 +143,30 @@ height: inherit;
 width: 495px;
 }
 
-.ulBorder {
-width: 495px;
-height: 430px;
-position: absolute;
-}
 
 div.jMyPuzzle {
 width: 495px;
 height: 430px;
 position: absolute;
- -webkit-transform: translate3d(0, 0, 0);
-   -moz-transform: translate3d(0, 0, 0);
-   -ms-transform: translate3d(0, 0, 0);
-   transform: translate3d(0, 0, 0); 
+
    
 }
-.splitList {
-width: 495px;
+ul.splitList {
+width: inherit;
 height: 430px;
 position: absolute;
+display: block;
 }
 
 .splitList li {
 position: absolute;
+list-style: none;
 width: inherit;
 font-size:18px;
 border-bottom: 1px solid rgb(187, 187, 187);
-padding: 3px 3px 3px 3px;
-line-height: 35px;
-position: relative;
+padding: 0;
+padding-left: 3px;
+line-height: 41px;
 top: 0px;
 color: rgba(34, 34, 34,1);
 }

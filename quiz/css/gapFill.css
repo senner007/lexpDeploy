@@ -1,6 +1,9 @@
-* {margin: 0; padding:0;}
-
-
+* {margin: 0; padding:0;
+ -webkit-transform: translate3d(0, 0, 0);					/*  Needed for jankfree drag on ipad */
+   -moz-transform: translate3d(0, 0, 0);
+   -ms-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0); 
+}
 
 .feedback {
 opacity: 0;
@@ -112,7 +115,7 @@ cursor: pointer;
 
 
 #ulContainer {
-height: 126px;
+height: 134px;
 width: 990px;
 margin-left: 8px;
 
@@ -155,10 +158,8 @@ margin: 0 auto;
 
 width: 995px;
 height: 640px;
-overflow: hidden;
+overflow: hidden;  /*  Needed for jankfree drag on ipad */
 
-
-/*   border-top: 5px solid transparent; */
   
 
 }
@@ -178,7 +179,7 @@ color: rgba(68, 68, 68,1);;
 
 
 .frame { 
-position: absolute;  padding: 0; width: 1000px; height: 380px; 
+position: absolute;  padding: 0; width: 1000px; height: 400px; 
 margin-top: 82px;
 
 
@@ -301,7 +302,7 @@ margin-top: 0px;
  */
  
  #bottomContainer {
- margin-top: 600px;
+ margin-top: 592px;
  width: 995px;
  position: absolute;
  }
